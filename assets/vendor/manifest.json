@@ -1,0 +1,82 @@
+{
+  "files": [
+    {
+      "path": "docsify/core.css",
+      "version": "5.1.0",
+      "source": "https://cdn.jsdelivr.net/npm/docsify@5.1.0/dist/themes/core.css",
+      "sha256": "d29478e6c633a79b951f5e8e8090f350f0b2ec48f927e98c4f809936ccf8c58c"
+    },
+    {
+      "path": "docsify/docsify.min.js",
+      "version": "5.1.0",
+      "source": "https://cdn.jsdelivr.net/npm/docsify@5.1.0/dist/docsify.min.js",
+      "sha256": "a1cd0033ddc41a6231d136297f83cedb898319f7931fb1bcb5c72f54f2e0491d"
+    },
+    {
+      "path": "docsify/LICENSE",
+      "version": "5.1.0",
+      "source": "https://cdn.jsdelivr.net/npm/docsify@5.1.0/LICENSE",
+      "sha256": "65a671d4b5bda281aac624bc6901d8a8c494c15dc3e329760e8652aa0d76519a"
+    },
+    {
+      "path": "docsify/search.min.js",
+      "version": "5.1.0",
+      "source": "https://cdn.jsdelivr.net/npm/docsify@5.1.0/dist/plugins/search.min.js",
+      "sha256": "a53c0d624a77d7b8501eeda550272e9b769ba38932134f1f46b7cb50cd315994"
+    },
+    {
+      "path": "docsify/zoom-image.min.js",
+      "version": "5.1.0",
+      "source": "https://cdn.jsdelivr.net/npm/docsify@5.1.0/dist/plugins/zoom-image.min.js",
+      "sha256": "9b43e3b006158c45dd52bb8acbdb5bcff475c48a6f527cacad375001c39c5e6b"
+    },
+    {
+      "path": "prism/LICENSE",
+      "version": "1.30.0",
+      "source": "https://cdn.jsdelivr.net/npm/prismjs@1.30.0/LICENSE",
+      "sha256": "2b947f0901a7ffcf08a89957da9783c0e9c6e72cb6ce8e959f501ab5409e4d2b"
+    },
+    {
+      "path": "prism/prism-bash.js",
+      "version": "1.30.0",
+      "source": "https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-bash.min.js",
+      "sha256": "6260814110e5182f2956e3bd257429548d9dbf2a9b66a63719b26cf9fac966a7"
+    },
+    {
+      "path": "prism/prism-c.js",
+      "version": "1.30.0",
+      "source": "https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-c.min.js",
+      "sha256": "9e05cf21207bff46afbf80cb8f43bb58bc4a4a87b68f28bc0470342f69345209"
+    },
+    {
+      "path": "prism/prism-cmake.js",
+      "version": "1.30.0",
+      "source": "https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-cmake.min.js",
+      "sha256": "396b5dbd10b253da47571a76be989ee39aa4bfc41ecd2436ab08294d2205476d"
+    },
+    {
+      "path": "prism/prism-cpp.js",
+      "version": "1.30.0",
+      "source": "https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-cpp.min.js",
+      "sha256": "12077d9ea67882c149066e94843a6ede9036994b3724bfc45b31d97619328e14"
+    },
+    {
+      "path": "prism/prism-json.js",
+      "version": "1.30.0",
+      "source": "https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-json.min.js",
+      "sha256": "956d86baa5ae7ec4106758f354ac2d140bdcd7fc103dece02f73ed12b8d663e4"
+    },
+    {
+      "path": "prism/prism-powershell.js",
+      "version": "1.30.0",
+      "source": "https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-powershell.min.js",
+      "sha256": "1ed401e08fc42847849774f9c9e171545ead0e0495958ea050aa9188db6c9849"
+    },
+    {
+      "path": "prism/prism-yaml.js",
+      "version": "1.30.0",
+      "source": "https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-yaml.min.js",
+      "sha256": "719c8e8b8c344dc9de510c729f65ba840b1502a0a8e7e25e2ad19ee715f65c02"
+    }
+  ]
+}

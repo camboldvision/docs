@@ -1,0 +1,61 @@
+:root {
+  --theme-color: #2563eb;
+  --font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  --font-family-mono: Consolas, "Cascadia Code", monospace;
+  --font-weight: 400;
+  --line-height: 1.85;
+  --content-max-width: 1000px;
+  --sidebar-width: 285px;
+  --sidebar-bg: #f5f8fa;
+  --sidebar-border-color: #e1e8ed;
+  --color-text: #253746;
+  --strong-color: #142d3c;
+  --heading-color: #142d3c;
+  --code-bg: #f0f4f6;
+  --code-color: #2856a8;
+}
+body { -webkit-font-smoothing: antialiased; }
+.app-name { font-size: 25px !important; font-weight: 750 !important; letter-spacing: -.7px; }
+.app-name a { color: #173b4b !important; }
+.sidebar { padding-top: 30px; }
+.sidebar-nav > ul > li > p { margin: 24px 0 6px; color: #5b7180; font-size: 12px; font-weight: 700; letter-spacing: .1em; }
+.sidebar-nav a { font-size: 14px; }
+.markdown-section { padding-top: 44px; padding-bottom: 30px; }
+.markdown-section h1 { font-size: clamp(30px, 4vw, 42px); line-height: 1.25; letter-spacing: -.035em; margin-top: 12px; }
+.markdown-section h2 { margin-top: 40px; padding-bottom: 9px; border-bottom: 1px solid #e3eaef; font-size: 25px; }
+.markdown-section h3 { font-size: 19px; }
+.markdown-section p, .markdown-section li { font-size: 15.5px; }
+.markdown-section table { font-size: 14px; line-height: 1.65; width: 100%; }
+.markdown-section th { background: #edf3ff; text-align: left; }
+.markdown-section td, .markdown-section th { padding: 10px 13px; }
+.markdown-section img { max-width: 100%; height: auto; border-radius: 10px; }
+.markdown-section img[src*="screenshots/"] { border: 1px solid #d9e3e9; box-shadow: 0 8px 26px #173b4b12; }
+.markdown-section blockquote { background: #eff5ff; padding: 12px 18px; border-left: 3px solid var(--theme-color); border-radius: 0 6px 6px 0; }
+.markdown-section blockquote p { margin: 0; color: #3b5679; }
+.markdown-section pre { position: relative; border: 1px solid #e0e8ed; border-radius: 8px; padding-top: 30px; }
+.copy-code { position: absolute; right: 8px; top: 6px; padding: 3px 9px; font: 12px var(--font-family); border: 1px solid #c8dadd; border-radius: 4px; background: white; color: #2856a8; cursor: pointer; }
+.hero-eyebrow { margin: 0 0 12px; color: #2563eb; font-size: 12px; font-weight: 750; letter-spacing: .16em; }
+.hero-lead { max-width: 800px; margin: 17px 0 24px; color: #506b78; font-size: 19px !important; line-height: 1.8; }
+.hero-actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0 28px; }
+.hero-actions a { display: inline-block; padding: 9px 19px; background: #2563eb; color: white !important; text-decoration: none !important; border-radius: 6px; font-size: 14px; font-weight: 650; }
+.hero-actions a + a { background: #eaf1ff; color: #2251ac !important; }
+.feature-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 13px; margin: 25px 0; }
+.feature { padding: 20px; border: 1px solid #dae6eb; border-radius: 10px; background: linear-gradient(145deg,#fff,#f6fafb); }
+.feature b { display: block; color: #153e50; margin-bottom: 8px; font-size: 17px; }
+.feature p { margin: 0; color: #56707d; font-size: 14px; }
+.caption { margin-top: 7px; margin-bottom: 25px; color: #65808b; font-size: 12px !important; line-height: 1.65; }
+.doc-footer { display: flex; justify-content: space-between; gap: 15px; margin-top: 60px; padding-top: 18px; border-top: 1px solid #dfe8ed; color: #768b95; font-size: 12px; }
+.app-nav { font-size: 13px; }
+@media (max-width: 900px) { .feature-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 600px) { .markdown-section { padding: 30px 20px; } .feature-grid { grid-template-columns: 1fr; } .hero-lead { font-size: 17px !important; } .doc-footer { flex-direction: column; } }
+@media (max-width: 600px) {
+  :root { --content-margin-inline: 0px; }
+  .markdown-section table { display: block; max-width: 100%; overflow-x: auto; }
+  .markdown-section td, .markdown-section th { min-width: 135px; }
+}
+@media print { .sidebar, .sidebar-toggle, .app-nav, .copy-code { display: none !important; } .content { margin: 0 !important; } .markdown-section { max-width: none; padding: 0; } .feature { break-inside: avoid; } }
+
+.markdown-section figure { margin: 24px 0; }
+.markdown-section code { overflow-wrap: anywhere; }
+.sidebar-nav li strong { color: #254b78; font-size: 13px; }
+.markdown-section blockquote strong { color: #234e8d; }

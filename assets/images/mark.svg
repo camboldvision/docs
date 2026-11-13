@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">CamBold — Camera Body CB</title>
+  <desc id="desc">An extended C forms the camera body and lens enclosure; B forms the right grip with two control openings.</desc>
+  <rect width="512" height="512" rx="108" fill="#254AE8"/>
+  <path fill="#FFFFFF" d="M296 168H226L212 144H158L144 168H140C104 168 80 194 80 230V306C80 342 104 368 140 368H296V324H144C132 324 124 316 124 304V232C124 220 132 212 144 212H296Z"/>
+  <circle cx="204" cy="268" r="40" fill="none" stroke="#FFFFFF" stroke-width="23"/>
+  <path fill="#A9EBFF" fill-rule="evenodd" d="M284 168H340C386 168 414 190 414 224C414 244 406 258 389 267C411 278 422 294 422 316C422 348 393 368 344 368H284ZM328 210V248H341C361 248 371 241 371 229S361 210 341 210ZM328 286V326H345C367 326 378 319 378 306S367 286 345 286Z"/>
+</svg>

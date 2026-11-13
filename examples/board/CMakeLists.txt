@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(cambold_board_example LANGUAGES C CXX)
+get_filename_component(_default_root "${CMAKE_CURRENT_LIST_DIR}/../../../.." ABSOLUTE)
+set(CAMBOLD_SOURCE_DIR "${_default_root}" CACHE PATH "CamBold project root")
+set(CB_SDK_BACKEND LOCAL CACHE STRING "" FORCE)
+add_subdirectory("${CAMBOLD_SOURCE_DIR}/cambold_sdk" "${CMAKE_CURRENT_BINARY_DIR}/sdk")
+add_executable(cambold_board_reader "${CAMBOLD_SOURCE_DIR}/cambold_sdk/examples/camera.c")
+target_link_libraries(cambold_board_reader PRIVATE CamBold::SDK)

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CamBold 用户与开发者文档：开箱上手、深度与建图定位、统一 C SDK、Debian 12 板端应用开发。">
+  <meta name="theme-color" content="#2563eb">
+  <title>CamBold · 用户与开发者文档</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/mark.svg">
+  <link rel="stylesheet" href="assets/vendor/docsify/core.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <div id="app">正在加载 CamBold 文档……</div>
+  <noscript>请启用 JavaScript，或直接阅读本目录中的 Markdown 文档。</noscript>
+  <script>
+    window.$docsify = {
+      name: 'CamBold', nameLink: '#/',
+      homepage: 'README.md', loadSidebar: true, loadNavbar: true,
+      alias: {'/.*/_sidebar.md':'/_sidebar.md','/.*/_navbar.md':'/_navbar.md'},
+      relativePath: false, subMaxLevel: 2, auto2top: true,
+      noCompileLinks: ['examples/.*', 'assets/.*'],
+      routerMode: 'hash', notFoundPage: '404.md',
+      search: {paths: 'auto', placeholder: '搜索功能、操作或接口', noData: '未找到相关内容', depth: 3, namespace: 'cambold-wiki-v2'},
+      plugins: [function (hook, vm) {
+        hook.afterEach(function (html) {
+          return html + '<footer class="doc-footer">CamBold · 用户与开发者文档 <span>文档基线：2026-11-13</span></footer>';
+        });
+        hook.doneEach(function () {
+          document.querySelectorAll('.markdown-section pre').forEach(function (pre) {
+            if (pre.querySelector('.copy-code')) return;
+            var button = document.createElement('button');
+            button.className = 'copy-code'; button.type = 'button'; button.textContent = '复制';
+            button.addEventListener('click', async function () {
+              var code = pre.querySelector('code');
+              try { await navigator.clipboard.writeText(code ? code.textContent : pre.textContent); button.textContent = '已复制'; }
+              catch (_) { button.textContent = '请选择代码复制'; }
+              setTimeout(function () { button.textContent = '复制'; }, 1800);
+            });
+            pre.appendChild(button);
+          });
+          document.querySelectorAll('.markdown-section img').forEach(function (img) { img.loading = 'lazy'; });
+          document.title = (document.querySelector('.markdown-section h1')?.textContent || '用户与开发者文档') + ' · CamBold';
+        });
+      }]
+    };
+  </script>
+  <script src="assets/vendor/docsify/docsify.min.js"></script>
+  <script src="assets/vendor/prism/prism-c.js"></script>
+  <script src="assets/vendor/prism/prism-cpp.js"></script>
+  <script src="assets/vendor/prism/prism-bash.js"></script>
+  <script src="assets/vendor/prism/prism-powershell.js"></script>
+  <script src="assets/vendor/prism/prism-json.js"></script>
+  <script src="assets/vendor/prism/prism-yaml.js"></script>
+  <script src="assets/vendor/prism/prism-cmake.js"></script>
+  <script src="assets/vendor/docsify/search.min.js"></script>
+  <script src="assets/vendor/docsify/zoom-image.min.js"></script>
+</body>
+</html>
